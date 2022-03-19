@@ -14,7 +14,7 @@ RUN mkdir /myapp
 WORKDIR /myapp
 
 # nvmをインストールしてnodejsを安定版にする ~ではなくrootを使わないと失敗する
-RUN git clone git://github.com/creationix/nvm.git /root/.nvm && \  
+RUN git clone https://github.com/nvm-sh/nvm.git /root/.nvm && \  
     echo . /root/.nvm/nvm.sh >> ~/.bashrc && \ 
     . /root/.bashrc && \
     nvm install --lts
