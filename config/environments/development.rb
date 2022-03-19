@@ -75,5 +75,5 @@ Rails.application.configure do
   # config.action_cable.disable_request_forgery_protection = true
 
   # 追加
-  config.hosts << "http://myprotein.tokyo/"
+  config.hosts << "myprotein.tokyo"
 end
