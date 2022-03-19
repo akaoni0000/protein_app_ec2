@@ -33,8 +33,8 @@ ADD . /myapp
 RUN mkdir -p tmp/sockets
 
 # herokuにupするときはコメントアウトを外す
-ENV RAILS_ENV=production
-COPY start.sh /start.sh
-RUN chmod 744 /start.sh
-CMD ["sh", "/start.sh"]
+# ENV RAILS_ENV=production
+# COPY start.sh /start.sh
+# RUN chmod 744 /start.sh
+# CMD ["sh", "/start.sh"]
 
