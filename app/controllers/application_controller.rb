@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
     
     def set_login_user
         @current_user = User.find_by(id: session[:user_id]) #find(session[])とすると必ずsessionに値がなければならない
+        gon.aaa = "aaa"
     end
 
     def redirect_root
