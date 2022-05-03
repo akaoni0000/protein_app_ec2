@@ -31,6 +31,7 @@ ADD . /myapp
 
 # puma.sockを配置するディレクトリを作成
 RUN mkdir -p tmp/sockets
+RUN mkdir -p tmp/pids
 
 # herokuにupするときはコメントアウトを外す
 # ENV RAILS_ENV=production
